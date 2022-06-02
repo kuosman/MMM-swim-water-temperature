@@ -22,9 +22,9 @@ modules: [{
 	config: {
 		sensor: "70B3D57050001ADA",
 		waterIcon: "person-swimming",
-    	airIcon: "wind",
-    	updateInterval: 30 * 60 * 1000, // every 30 minutes
-    	apiUrl: "https://iot.fvh.fi/opendata/uiras/uiras2_v1.json"
+		airIcon: "wind",
+		updateInterval: 30 * 60 * 1000, // every 30 minutes
+		apiUrl: "https://iot.fvh.fi/opendata/uiras/uiras2_v1.json"
 	}
 }]
 ````
