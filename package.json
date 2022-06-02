@@ -1,0 +1,27 @@
+{
+    "name": "Magic-Mirror-Module-Swim-Water-Temperature",
+    "version": "1.0.1",
+    "description": "This module for the Magic Mirror allows you to show swim water tempererature from Finland metropolitan area.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kuosman/MMM-swim-water-temperature"
+    },
+    "keywords": [
+        "magic mirror",
+        "smart mirror",
+        "module",
+        "remote control",
+        "control"
+    ],
+    "author": "Marko Kuosmanen",
+    "contributors": "git+https://github.com/kuosman/MMM-swim-water-temperature/graphs/contributors",
+    "license": "MIT",
+    "bugs": {
+        "url": "git+https://github.com/kuosman/MMM-swim-water-temperature/issues"
+    },
+    "homepage": "git+https://github.com/kuosman/MMM-swim-water-temperature#readme",
+    "dependencies": {
+        "moment": "latest",
+        "request": "latest"
+    }
+}

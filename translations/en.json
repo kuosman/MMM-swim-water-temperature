@@ -1,0 +1,5 @@
+{
+    "configEmpty": "Please setup the sensor in the config for module: ",
+    "loading": "Loading...",
+    "errorGettingData": "Error getting data for sensor: "
+}

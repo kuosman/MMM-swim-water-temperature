@@ -1,0 +1,14 @@
+div.swim-water-temperature span.icon {
+  margin-right: 10px;
+}
+
+div.swim-water-temperature div.date {
+  font-size: 14px;
+}
+
+div.swim-water-temperature div.temperature {
+  width: 100px;
+  padding: 4px;
+  display: table-cell;
+}
+/*# sourceMappingURL=styles.css.map */
