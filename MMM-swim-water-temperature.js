@@ -82,12 +82,12 @@ Module.register("MMM-swim-water-temperature", {
         '"></i></span>';
       const time = '<div class="date">' + this.sensorData.time + "</div>";
       const waterTemp =
-        '<div class="temperature">' +
+        '<div class="temperature bright">' +
         waterIcon +
         this.formatTemperature(this.sensorData.temp_water) +
         " &#8451;</div>";
       const airTemp =
-        '<div class="temperature">' +
+        '<div class="temperature bright">' +
         airIcon +
         this.formatTemperature(this.sensorData.temp_air) +
         " &#8451;</div>";
