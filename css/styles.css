@@ -9,6 +9,6 @@ div.swim-water-temperature div.date {
 div.swim-water-temperature div.temperature {
   width: 100px;
   padding: 4px;
-  display: table-cell;
+  display: inline-table;
 }
 /*# sourceMappingURL=styles.css.map */
