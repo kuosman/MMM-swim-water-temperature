@@ -21,7 +21,7 @@ Module.register('MMM-swim-water-temperature', {
 
     sensorData: null,
     updateTimer: null,
-    identifier: new UUID(),
+    identifier: Date.now(),
 
     /**
      * Gets styles
