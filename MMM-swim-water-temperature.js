@@ -16,7 +16,7 @@ Module.register('MMM-swim-water-temperature', {
         airIcon: 'wind', // See free icons: https://fontawesome.com/icons?d=gallery
         sensor: '70B3D57050001ADA', // See: https://iot.fvh.fi/opendata/uiras/uiras-meta.json
         updateInterval: 10000, // every 30 minutes
-        apiUrl: 'https://iot.fvh.fi/opendata/uiras/uiras2_v1.json',
+        apiUrl: 'https://iot.fvh.fi/opendata/uiras/uiras_latest.geojson',
     },
 
     sensorData: null,

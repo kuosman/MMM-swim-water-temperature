@@ -58,24 +58,20 @@ module.exports = NodeHelper.create({
             function (error, response, body) {
                 if (!error && response.statusCode === 200) {
                     const data = JSON.parse(body);
-                    const wantedSensor = data.sensors[sensor] || {};
-                    const wantedSensorData = wantedSensor.data || [];
-                    const latestData =
-                        wantedSensorData.length > 0
-                            ? wantedSensorData[wantedSensorData.length - 1]
-                            : null;
+                    const features = data.features;
+                    const wantedSensorFeature = features.find(f => f.id === sensor);
+                    const wantedSensorData = wantedSensorFeature.properties.measurement;
 
                     let sensorData = {};
 
-                    if (latestData !== null) {
-                        const time = new Date(latestData.time);
+                    if (wantedSensorData) {
+                        const time = new Date(wantedSensorData.time);
                         sensorData.time =
                             moment(time).format('DD.MM.YYYY HH:mm');
-                        sensorData.temp_air = latestData.temp_air;
-                        sensorData.temp_water = latestData.temp_water;
+                        sensorData.temp_air = wantedSensorData.temp_in;
+                        sensorData.temp_water = wantedSensorData.temp_water;
                         sensorData.sensor = sensor;
                     }
-
                     self.sendSocketNotification(
                         'MMM_SWIM_WATER_TEMPERATURE_SENSOR_RESPONSE_' + sensor,
                         {
